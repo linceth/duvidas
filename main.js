@@ -11,8 +11,8 @@ function validaCampo(campoA, campoB){
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
-    const valorDoInputA = parsefloat(numeroA.value);
-    const valorDoInputB = parsefloat(numeroB.value);
+    const valorDoInputA = parseFloat(numeroA.value);
+    const valorDoInputB = parseFloat(numeroB.value);
     const mensagemSucesso = `Resultado correto o valor de B: ${campoB.value} é maior que o valor de A: ${campoA.value}. `;
     const mensagemErro = `Resultado inválido o valor de B: ${campoB.value} é menor que o valor de A: ${campoA.value}.`;
 
