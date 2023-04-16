@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    color: #fff;
+    background-color: royalblue;
+    padding: 16px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+header .ebac {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+header ul {
+    list-style: none;
+}
+
+header h1, #produtos {
+    font-style: italic;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+.store a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.store-front {
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+}
+
+#informacao {
+    margin-bottom: 16px;
+    font-style: italic;
+    color: royalblue;
+}
+
+.p1 {
+    text-align: justify;
+    padding-top: 40px;
+    border-top: 2px solid royalblue;
+    width: 100%;
+}
+
+.p2 {
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.descricao {
+    margin-left: 2px;
+}
+
+#produtos {
+    color: royalblue;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid royalblue;
+}
+
+.produtos img, a, button {
+    display: block;
+}
+
+.produtos a {
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+.produtos p {
+    font-size: 12px;
+    padding: 8px;
+}
+
+.produtos button {
+    background-color: royalblue;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.produtos {
+    margin-top: 16px;
+    margin-left: 0px;
+    list-style: none;
+    
+}
+
+.produtos ul li img{
+    width: 100%;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container {
+        max-width: 1023px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        grid-template-rows: 30px 30px;
+        list-style: none;
+    } 
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .produtos {
+        list-style: none;
+    
+    }
+
+    .produtos img {
+        max-width: 24%;
+        display: flex;
+    }
+}
+
+
+
+
